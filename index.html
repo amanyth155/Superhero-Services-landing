@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Superhero Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+
+    .carousel-item {
+  height: 600px;
+  position: relative;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  bottom: 20%;
+}
+
+    .feature-icon {
+      font-size: 40px;
+    }
+    .testimonial img {
+      width: 50px;
+      border-radius: 50%;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 30px 0;
+    }
+    .contact-form input, .contact-form textarea {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Superhero Services</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+ <!-- Hero Carousel -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./imges/hero1.jpg" class="d-block w-100" alt="Slide 1">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Superhero Services</h1>
+        <p>Ready to save the world with you</p>
+        <a href="#" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./imges/hero2.jpg" class="d-block w-100" alt="Slide 2">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Powerful Protection</h1>
+        <p>Always watching. Always ready.</p>
+        <a href="#" class="btn btn-success">Learn More</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./imges/hero3.jpg" class="d-block w-100" alt="Slide 3">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Global Response</h1>
+        <p>Fast. Fearless. First on the scene.</p>
+        <a href="#" class="btn btn-danger">Join Now</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+  <!-- Features -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2>Our Super Features</h2>
+      <p>What differentiates us from ordinary services</p>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="feature-icon text-primary mb-2">⚡</div>
+          <h5>Super Speed</h5>
+          <p>Faster than a speeding bullet.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-icon text-success mb-2">🛡️</div>
+          <h5>Invincible Protection</h5>
+          <p>Defend any threat without hesitation.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-icon text-danger mb-2">👁️</div>
+          <h5>X-Ray Vision</h5>
+          <p>See the unseen and detect danger ahead.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="text-center py-5 bg-light">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 mx-auto mb-4">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VifGVufDB8fDB8fHww" class="img-fluid mb-3" alt="Service 1" />
+          <h5>VIP Protection</h5>
+          <p>Personalized protection services for politicians and celebrities.</p>
+        </div>
+        <div class="col-md-6 mx-auto mb-4">
+          <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYnxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid mb-3" alt="Service 2" />
+          <h5>Disaster Response</h5>
+          <p>Rapid response for natural disasters and accidents across the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offer -->
+  <section class="text-center bg-warning py-3">
+    <p class="mb-0">Special Offer! <a href="#" class="btn btn-dark btn-sm ms-2">Enroll Now</a></p>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2>What Our Clients Say</h2>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-6 testimonial">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fGh1bWFufGVufDB8fDB8fHww" alt="Client 1" class="me-3">
+            <div>
+              <strong>Lois Lane</strong><br/>
+              <small>⭐⭐⭐⭐⭐</small>
+            </div>
+          </div>
+          <p>"I have never felt safer! Their team is always on time and never misses a beat. Truly heroic service."</p>
+        </div>
+        <div class="col-md-6 testimonial mt-4 mt-md-0">
+          <div class="d-flex align-items-center mb-3">
+            <img src="https://plus.unsplash.com/premium_photo-1682089804117-cea5d901647f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGh1bWFufGVufDB8fDB8fHww" alt="Client 2" class="me-3">
+            <div>
+              <strong>Jimmy Olsen</strong><br/>
+              <small>⭐⭐⭐⭐⭐</small>
+            </div>
+          </div>
+          <p>"Whether it's a big event or an emergency, Superhero Services is the only name I trust."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Contact Us</h2>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+          <form class="contact-form">
+            <input type="text" class="form-control" placeholder="Your Name" required />
+            <input type="email" class="form-control" placeholder="Your Email" required />
+            <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1">© Superhero Services</p>
+      <div class="mb-2">Quick Links: <a href="#" class="text-white">Home</a> | <a href="#" class="text-white">Contact</a></div>
+      <div>Connect With Us:
+        <a href="#" class="text-white ms-2">Facebook</a>
+        <a href="#" class="text-white ms-2">Twitter</a>
+        <a href="#" class="text-white ms-2">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
